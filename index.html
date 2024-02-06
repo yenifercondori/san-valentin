@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>♥ quieres ser mi san valentin? ♥</title>
+  <style>
+    .body {
+      background-color: #ef0808d4;
+      text-align: center;
+    }
+
+
+    #IMAGEN{
+       
+        width: 20%;
+        max-width: 200px;
+        border-radius: 50%;
+        padding-top:10px;
+    }
+
+    .body__title {
+      color: white;
+      padding-top: 20px;
+    }
+
+  </style>
+</head>
+
+<body class="body">
+    <img id="IMAGEN" src="/SANVALENTIN.jpg">
+  <h1 class="body__title">♥ ¿quieres ser mi san valentin? ♥</h1>
+  
+  <button id="yes">🌚Si🌚</button>
+  <button id="no">😭No😭</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('💞ahora eres mi san valentin💞');
+      alert('Te amo <3');
+      location.href="https://www.youtube.com/watch?v=2qpuJjR10EQ"
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
